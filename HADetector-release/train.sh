@@ -1,0 +1,20 @@
+python main_train.py \
+  --world_size 1 \
+  --batch_size 12 \
+  --data_path "/root/autodl-tmp/HADataset_Ours_256/train" \
+  --epochs 200 \
+  --lr 1e-4 \
+  --min_lr 5e-7 \
+  --weight_decay 0.05 \
+  --edge_lambda 20 \
+  --predict_head_norm "BN" \
+  --vit_pretrain_path "./pretrained-weights/mae_pretrain_vit_base.pth" \
+  --test_data_path "/root/autodl-tmp/HADataset_Ours_256/test" \
+  --warmup_epochs 4 \
+  --output_dir /root/autodl-tmp/HADataset_Ours_256_output_hatector \
+  --log_dir /root/autodl-tmp/HADataset_Ours_256_output_hatector/  \
+  --accum_iter 2 \
+  --seed 42 \
+  --test_period 4 \
+  --num_workers 8 \
+2> >(tee -a train_error.log) 1> >(tee -a train_log.log)

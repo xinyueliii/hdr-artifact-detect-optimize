@@ -1,0 +1,10 @@
+python train_sct.py \
+    --epochs 100 \
+    --lr 2e-4 \
+    --loss_func 1 \
+    --patch_size 128 \
+    --logdir '/root/autodl-tmp/SCT_Kal_training' \
+    --dataset_dir '/root/autodl-tmp/data/Kal' \
+    --sub_set 'sig17_training_crop128_stride64' \
+    --seed 443 \
+    --batch_size 8 \
