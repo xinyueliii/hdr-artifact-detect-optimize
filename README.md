@@ -233,17 +233,20 @@ This part includes 6 subsets of HADataset for HDR artifact detection. Specifical
 ### Stage-1 Training the HADetector model
 
 1. Prepare the training dataset (i.e., HADataset-O, HADataset-K, HADataset-T, HADataset-A, HADataset-C, HADataset-S).
-2. Preprocess the dataset. Modify the dataset path in the code.
+2. Download the pretrained MAE model
+   - Download link: [Google Drive](https://drive.google.com/drive/folders/1aumoohMuj5pj2KinuXm5qlzE1cl5eh0W?usp=drive_link)
+   - Path: `HADetector-release\pretrained-weights`
+3. Preprocess the dataset. Modify the dataset path in the code.
 ```bash
 $ cd HADetector-release/utils
 $ python crop.py
 ```
-3. Run the following commands to train HADetector:
+4. Run the following commands to train HADetector:
 ```bash
 $ cd HADetector-release
 $ bash train.sh
 ```
-4. Run the following commands to test HADetector. You can save the visualization results by modify the parameters in ``test.sh``.
+5. Run the following commands to test HADetector. You can save the visualization results by modify the parameters in ``test.sh``.
 ```bash
 $ cd HADetector-release
 $ bash test.sh
