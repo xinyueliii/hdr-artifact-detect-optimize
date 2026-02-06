@@ -66,9 +66,9 @@ pip install -r requirements.txt
 
 ## Getting the dataset
 
-The HADataset can be downloaded in [Google Drive]().
+The HADataset is available on Hugging Face 🤗
 
-⚠️ **Coming Soon:** The download link will be updated before Feb 7, 2026.
+[![Dataset on HF](https://img.shields.io/badge/🤗_Hugging_Face-Dataset-yellow)](https://huggingface.co/datasets/Xinyueliii/HADataset)
 
 The HADataset consists of two parts:
 
